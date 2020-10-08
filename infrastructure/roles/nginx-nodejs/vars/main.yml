@@ -1,0 +1,4 @@
+---
+# vars file for nginx-nodejs
+docroot: /var/www/hml
+server_name: devops.nodejsapp

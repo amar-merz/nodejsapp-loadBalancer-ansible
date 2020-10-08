@@ -1,0 +1,14 @@
+upstream nodeapp{
+server 52.15.202.139;
+server 3.14.141.12;
+}
+
+server{
+listen 80;
+server_name {{server_name}};
+location /{
+proxy_pass http://nodeapp;
+proxy_set_header X-FRORWARDED-For $remote_addr;
+proxy_set_header Host $http_host;
+}
+}

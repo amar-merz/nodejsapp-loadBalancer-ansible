@@ -1,0 +1,23 @@
+---
+###########Load balancer paly #########################
+- hosts: nginx_load_balancer
+  become: yes
+  remote_user: ubuntu
+  roles:
+          - common
+          - nginx-common
+          - nginx-nodejs
+         
+
+
+#######################Node js backend play ###################
+- hosts: nodejs_backend
+  become: yes
+  remote_user: ubuntu
+  roles:
+         - common
+         - nodejs-common
+
+
+
+

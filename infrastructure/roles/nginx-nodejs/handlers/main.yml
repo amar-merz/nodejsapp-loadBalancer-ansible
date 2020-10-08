@@ -1,0 +1,6 @@
+---
+# handlers file for nginx-nodejs
+- name: Restart nginx
+  service:
+          name: nginx
+          state: reloaded

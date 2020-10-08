@@ -1,0 +1,10 @@
+[nginx_load_balancer]
+3.137.219.128
+[nginx_load_balancer:vars]
+ansible_python_interpreter=/usr/bin/python3
+
+[nodejs_backend]
+52.15.202.139
+3.14.141.12
+[nodejs_backend:vars]
+ansible_python_interpreter=/usr/bin/python3

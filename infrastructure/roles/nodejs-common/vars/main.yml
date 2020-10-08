@@ -1,0 +1,4 @@
+---
+# vars file for nodejs-common
+nodejs_version: 12
+ansible_distribution_release: focal
